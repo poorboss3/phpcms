@@ -91,14 +91,13 @@ function Register()
 		$result=mysql_query($sql);
 		if(mysql_num_rows($result))
 		{
-			echo "<script language='javascript'>alert('The Account has already existed.);</script>";
+			echo "<script language='javascript'>alert('The Account has already existed.');history.go(-1);</script>";
 		}
 		else
 		{
-			$Password=md5($Password);
+			$Password=md5($pwd);
 			mysql_query("INSERT INTO sc_member(account,pwd,name,tel,email,facebookid,resgisetTime) VALUES ('$account','$Password','$name','$tel','$email','$facebook',NOW())");
-			echo "<script language='javascript'>alert('Successful.');</script>";
-			header("Location: login.php");
+			echo "<script language='javascript'>alert('Successful.');location.href='/login.php';</script>";
 		}
 	}
 }

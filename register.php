@@ -269,12 +269,12 @@
 			}
 			if (document.login_form.Name.value.length == 0) {
 				alert("Please Enter Your Name.");
-				document.login_form.answer.focus();
+				document.login_form.Name.focus();
 				return false;
 			}
-			if (document.login_form.e_mail.value.length == 0 || !checkEmail(document.login_form.e_mail.value)) {
+			if (document.login_form.email.value.length == 0 || !checkEmail(document.login_form.email.value)) {
 				alert("Please Enter A Valid E_mail.");
-				document.login_form.tel.focus();
+				document.login_form.email.focus();
 				return false;
 			}
 			if (document.login_form.tel.value.length == 0) {
@@ -284,7 +284,7 @@
 			}
 			if (document.login_form.facebookID.value.length == 0) {
 				alert("Please Enter A Valid facebookID.");
-				document.login_form.tel.focus();
+				document.login_form.facebookID.focus();
 				return false;
 			}
 			return true;
