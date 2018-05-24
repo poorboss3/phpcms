@@ -33,101 +33,96 @@ include_once  './Templete/default/Include/Function.php';
 <body>
 <?php echo $webgoogle; ?>
 
-<div class="sc">
+    <div>
+        <div class="sc">
 
-	<!--top-->
-    	
- <?php include_once  './Templete/default/Include/Top.php';?>
-    	
- 
-    <!--top end-->
-    <div class="cb"></div>
-    <!--mid-->
-    <div class="sc_mid">
-    	<div class="sc_mid_c">
-        <!--mid left-->
-        	<div class="sc_mid_c_left">
-                <div class="sc_mid_c_left_c">
-                <?php
-                echo"<div class='fl' id='fl'><ul>";
-                echo get_str(1,$Language,$web_url);
-                echo"</ul></div>";
-                ?>
-                </div>
-                <div class="cb"></div>
-                <div class="sc_mid_c_left_c sc_mid_left_bt"><?php echo $tag_hot;?></div>
-                <div class="cb"></div>
-                <div class="sc_mid_c_left_c">
-                <?php echo indexpro("news",$Language,$tag_inquiry,$web_url,$webinlist);?>
-                </div>
-                
-                
-            
-            </div>
-         <!--mid right-->
-            <div class="sc_mid_c_right">
-            	<div class="sc_mid_c_right_c">
-                    <!--jdt-->
-                    <div class="mBan2">
-                    <div id="slideBox" class="slideBox">
-                        <div class="hd">
-                            <ul><?php echo  web_banner("an",$Language);?></ul>
+            <!--top--><?php include_once  './Templete/default/Include/Top.php';?>
+
+
+            <!--top end-->
+            <div class="cb"></div>
+            <!--mid-->
+            <div class="sc_mid">
+                <div class="sc_mid_c">
+                    <!--mid left-->
+                    <div class="sc_mid_c_left">
+                        <div class="sc_mid_c_left_c">                            <?php
+                            echo"<div class='fl' id='fl'><ul>";
+                            echo get_str(1,$Language,$web_url);
+                            echo"</ul></div>";
+                            ?>
                         </div>
-                        <div class="bd">
-                            <ul>
- 			<?php echo  web_banner("nr",$Language);?>
-                            </ul>
+                        <div class="cb"></div>
+                        <div class="sc_mid_c_left_c sc_mid_left_bt"><?php echo $tag_hot;?></div>
+                        <div class="cb"></div>
+                        <div class="sc_mid_c_left_c"><?php echo indexpro("news",$Language,$tag_inquiry,$web_url,$webinlist);?>
                         </div>
+
+
+
                     </div>
+                    <!--mid right-->
+                    <div class="sc_mid_c_right">
+                        <div class="sc_mid_c_right_c">
+                            <!--jdt-->
+                            <div class="mBan2">
+                                <div id="slideBox" class="slideBox">
+                                    <div class="hd">
+                                        <ul><?php echo  web_banner("an",$Language);?></ul>
+                                    </div>
+                                    <div class="bd">
+                                        <ul><?php echo  web_banner("nr",$Language);?>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <script language="javascript">
+                                jQuery(".slideBox").slide({ mainCell: ".bd ul", effect: "fold", autoPlay: true, trigger: "click" });
+                            </script>
+                            <!--jdt end-->
+
+                        </div>
+                        <div class="cb"></div>
+                        <div class="sc_mid_c_right_title"><?php echo $tag_tuijian;?></div>
+                        <div class="cb"></div>
+                        <div class="sc_mid_c_right_c"><?php echo indexpro("tj",$Language,$tag_inquiry,$web_url,$webiflist);?></div>
+
+
                     </div>
-                    <script language="javascript">
-                    jQuery(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,trigger:"click"});
-                    </script>
-                    <!--jdt end-->
-                    
+                    <!--mid end-->
+
                 </div>
-            	<div class="cb"></div>
-                <div class="sc_mid_c_right_title"><?php echo $tag_tuijian;?></div>
-                <div class="cb"></div>
-                <div class="sc_mid_c_right_c"><?php echo indexpro("tj",$Language,$tag_inquiry,$web_url,$webiflist);?></div>
-            
-            
+
+
             </div>
-         <!--mid end-->
-        
+            <!--mid end-->
+            <div class="cb"></div>
+            <!--bot-->
+
+            <div class="sc_bot">
+                <div class="sc_bot_1">
+                    <div class="sc_bot_1_t"><?php echo $tag_about;?></div>
+                    <div class="cb"></div>
+                    <div class="sc_bot_1_c"><?php echo $tag_homeabout;?></div>
+                    <div class="cb"></div>
+
+                </div>
+            </div>
+
+            <div class="cb"></div>
+            <div class="sc_indexnews">
+                <div class="sc_indexnews_t"><h3>Last News</h3></div>
+                <div class="cb"></div>
+                <div class="sc_indexnews_c"><?php echo indexwbnews($Language,$web_url);?>
+                </div>
+
+            </div>
+            <div class="cb"></div>
+            <?php include_once  './Templete/default/Include/Bot.php';?>
+            <!--bot end-->
+
         </div>
-    
-    
     </div>
-   <!--mid end-->
-<div class="cb"></div>
-<!--bot-->
-
-<div class="sc_bot">
-	<div class="sc_bot_1">
-    	<div class="sc_bot_1_t"><?php echo $tag_about;?></div>
-        <div class="cb"></div>
-        <div class="sc_bot_1_c"><?php echo $tag_homeabout;?></div>
-        <div class="cb"></div>
-    
-    </div>
-</div>
-
-<div class="cb"></div>
-<div class="sc_indexnews">
-    <div class="sc_indexnews_t"><h3>Last News</h3></div>
-    <div class="cb"></div>
-    <div class="sc_indexnews_c">
-        
-        <?php echo indexwbnews($Language,$web_url);?>
-    </div>
-
-</div>
-    <div class="cb"></div>
-<?php include_once  './Templete/default/Include/Bot.php';?>
-<!--bot end-->
-
-</div>
 
 
 

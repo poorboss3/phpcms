@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 /*
    CopyRight sem-cms.com
@@ -88,6 +88,17 @@ img{ max-width:100%;}
 .sc_top_conment_2_right{ width:870px; float:right;margin-top:35px;}
 .sc_top_conment_2_right_left{ width:560px; float:left;}
 .sc_top_conment_2_right_right{ width:280px; float:right; height:32px; background:url(../Images/tel.png); background-repeat:no-repeat; font-weight:900; font-size:1.5em; text-indent:2.5em; color:#333;}
+.sc_top_conment_2_right_singe {
+    width: 280px;
+    float: right;
+    height: 32px;
+    background-repeat: no-repeat;
+    font-weight: 900;
+    font-size: 1.5em;
+    text-indent: 2.5em;
+    color: #333;
+}
+
 .sc_top_ser_1{border-radius: 5px 0px 0px 5px; float:left; border:1px solid #E3E3E3; padding-left:5px; color:#333; width:480px; height:25px; line-height:25px;}
 .sc_top_ser_2{border-radius: 0px 5px 5px 0px; border:none; background:#19CAAF; color:#FFF;height:28px;   float:left;   }
 .sc_top_conment_3{ width:1170px; float:left;}
