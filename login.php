@@ -19,7 +19,6 @@
 
         body {
             line-height: 180%;
-            padding-top: 88px;
             padding-bottom: 40px;
             background-color: #fff;
             font-size: 1.0em;
@@ -244,16 +243,16 @@
 
     <div class="login">
         <center>
-			<img id="logo" src="<?php echo $weblogo; ?>" />
+			<img id="logo" src="/Images/default/18041710270438.jpg" />
         </center>
         <div style="clear:both;height:30px;"></div>
 
 		<form id="loginform" name="loginform" method="post" action="member.php?action=login">
-			<input type="text" class="form-control" value="Please EnterUser Name" placeholder="Please EnterUser Name" onfocus="if(this.value=='Please EnterUser Name') {this.value=''}" onblur="if(this.value=='') this.value='Please EnterUser Name'" data-errortxt="Please EnterUser Name" name="username" id="username" required autofocus />
+			<input type="text" class="form-control"  placeholder="Please EnterUser Name"  data-errortxt="Please EnterUser Name" name="username" id="username" required autofocus />
 			<div class="blank10"></div>
-			<input type="password" class="form-control" value="Please EnterPassword" placeholder="Please EnterPassword" onfocus="if(this.value=='Please EnterPassword') {this.value=''}" onblur="if(this.value=='') this.value='Please EnterPassword'" data-errortxt="Please EnterPassword" name="password" id="password" required />
+			<input type="password" class="form-control"placeholder="Please EnterPassword"  data-errortxt="Please Enter Password" name="password" id="password" required />
 			<div class="blank10"></div>
-			<input type="submit" name="submit" value="Sing In"/>
+			<input type="submit" name="submit" value="Sing In" id="reg" class="register_btn"/>
 			<input name="btn_login" type="button" id="btn_reg" value="Sing Up" onclick="location.href='register.php'" />
 			<div class="blank20"></div>
 		</form>

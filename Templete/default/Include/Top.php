@@ -1,10 +1,24 @@
         <div class="sc_top">
         	<div class="sc_top_conment">
             	<div class="sc_top_conment_1">
-					<div class="sc_top_conment_2_right_singe">
+                
+                <?php
+                if(isset($_COOKIE["user"])&&$_COOKIE["user"]!="")
+                {?>
+                    <div class="sc_top_conment_2_right_singe">
+                    <a href="#" style="margin-right:15px;font-size:large;cursor:pointer;"><?php echo @htmlspecialchars($_COOKIE["user"])?></label>
+                    <a href="<?php echo $web_url; ?>member.php?action=loginout" style="font-size:large;cursor:pointer;">Sign out</a>
+                    </div>
+                <?php
+            }else{
+                ?>
+    					<div class="sc_top_conment_2_right_singe">
 						<a href="<?php echo $web_url; ?>login.php" style="margin-right:15px;font-size:large;cursor:pointer;">Sign in</a>
 						<a href="<?php echo $web_url; ?>register.php" style="font-size:large;cursor:pointer;">Sign up</a>
-					</div>
+                    </div>
+                <?php 
+            }
+            ?>
 				</div>
                 <div class="cb">
 				</div>

@@ -1,4 +1,5 @@
 <?php
+include_once  './Include/web_inc.php';
 $action=$_GET["action"];
    if($action=="login")
    {
@@ -20,10 +21,10 @@ $action=$_GET["action"];
    }
    function login()
    {
-    $US=test_input($_POST['UserName']);
-    $PS=test_input($_POST['UserPass']);
+    $US=test_input($_POST['username']);
+    $PS=test_input($_POST['password']);
     if(empty($US) || empty($PS) ){
-        echo "<script language='javascript'>alert('account or password can not be null.');history.go(-1);</script>";
+        echo "<script language='javascript'>alert('Please enter your account or password.');history.go(-1);</script>";
     }else{
         $PS=md5($PS);
        $sql="select * from sc_member where account='$US' and pwd='$PS'";
@@ -33,25 +34,24 @@ $action=$_GET["action"];
        if (!mysql_num_rows($result))
            {
 
-			   echo "<script language='javascript'>alert('Sorry, the account with this keycode was not found.');history.go(-1);</script>";
+               echo "<script language='javascript'>alert('Sorry, the account with this keycode was not found.');</script>";
+               header("Location:login.php");
 
            }
        else
            {
 
-             setcookie("username", $row['user_name'],time()+3600*24,"/");
-             setcookie("user", $row['user_ps'],time()+3600*24,"/");//设定时间为2个小时
-             setcookie("userqx", $row['user_qx'],time()+3600*24,"/");//设定时间为2个小时
+             setcookie("account", $row['account'],time()+3600*24,"/");
+             setcookie("user", $row['name'],time()+3600*24,"/");//设定时间为2个小时
              header("Location:index.php");
            }
    }
 }
 function loginOut()
 {
-    setcookie("username", "",time()-3600*24,"/");
+    setcookie("account", "",time()-3600*24,"/");
     setcookie("user", "", time()-3600*24,"/");
-    setcookie("userqx", "",time()-3600*24,"/");
-    header("Location:index.html");
+    header("Location:index.php");
 }
 
 function Register()
@@ -89,7 +89,7 @@ function Register()
 	else{
 		$sql="select * from sc_member where account='$account'";
 		$result=mysql_query($sql);
-		if(mysql_num_rows($result))
+		if(mysql_num_rows($result)>0)
 		{
 			echo "<script language='javascript'>alert('The Account has already existed.');history.go(-1);</script>";
 		}

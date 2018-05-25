@@ -27,14 +27,13 @@
 
         body {
             line-height: 180%;
-            padding-top: 88px;
             padding-bottom: 40px;
             background-color: #fff;
             font-size: 1.0em;
             color: #333;
         }
 
-        /* Í¨ÓÃ */
+        /* Í¨ï¿½ï¿½ */
 
         .blank5,
         .blank10,
@@ -241,7 +240,7 @@
 
 	<script type="text/javascript" language="javascript">
 		function checkEmail(e_mail) {
-			//¶Ôµç×ÓÓÊ¼þµÄÑéÖ¤
+			//ï¿½Ôµï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤
 			var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
 			return myreg.test(e_mail);
 		}
@@ -302,7 +301,7 @@
 
 	<div class="login">
 		<center>
-			<img id="logo" src="<?php echo $weblogo; ?>" />
+			<img id="logo" src="/Images/default/18041710270438.jpg" />
 		</center>
 		<div style="clear:both;height:30px;"></div>
 
