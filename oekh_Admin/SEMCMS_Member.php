@@ -14,6 +14,7 @@
       <td><strong>电话</strong></td>
       <td><strong>邮箱</strong></td>
       <td><strong>Facebook ID</strong></td>
+      <td><strong>订单号</strong></td>
       <td width="12%" align="center"><strong>注册时间</strong>       
   </tr>
    <?php 
@@ -49,6 +50,7 @@
     <td><?php echo $row['tel'] ?></td> 
     <td><?php echo $row['email'];?> </td>
     <td><?php echo $row['facebookid'];?> </td>
+    <td><?php echo $row['OrderNumber'];?> </td>
     <td><?php echo $row['resgisetTime'];?> </td>
     </tr>
        

@@ -243,7 +243,7 @@
 
     <div class="login">
         <center>
-			<img id="logo" src="/Images/default/18041710270438.jpg" />
+            <img id="logo" src="https://glteck.com/Images/default/18041412581894.png" />
         </center>
         <div style="clear:both;height:30px;"></div>
 
@@ -252,7 +252,7 @@
 			<div class="blank10"></div>
 			<input type="password" class="form-control"placeholder="Please EnterPassword"  data-errortxt="Please Enter Password" name="password" id="password" required />
 			<div class="blank10"></div>
-			<input type="submit" name="submit" value="Sing In" id="reg" class="register_btn"/>
+            <input type="submit" name="submit" value="Login" id="reg" class="register_btn" />
 			<input name="btn_login" type="button" id="btn_reg" value="Sing Up" onclick="location.href='register.php'" />
 			<div class="blank20"></div>
 		</form>

@@ -62,6 +62,7 @@ function Register()
     $email=test_input($_POST['email']);
     $tel=test_input($_POST['tel']);
     $facebook=test_input($_POST['facebookID']);
+    $OrderNumber=test_input($_POST['OrderNumber']);
     if(empty($account))
     {
         echo "<script language='javascript'>alert('Please Enter Account.');history.go(-1);</script>";
@@ -96,7 +97,7 @@ function Register()
 		else
 		{
 			$Password=md5($pwd);
-			mysql_query("INSERT INTO sc_member(account,pwd,name,tel,email,facebookid,resgisetTime) VALUES ('$account','$Password','$name','$tel','$email','$facebook',NOW())");
+			mysql_query("INSERT INTO sc_member(account,pwd,name,tel,email,facebookid,OrderNumber,resgisetTime) VALUES ('$account','$Password','$name','$tel','$email','$facebook','$OrderNumber',NOW())");
 			echo "<script language='javascript'>alert('Successful.');location.href='/login.php';</script>";
 		}
 	}

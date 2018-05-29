@@ -13,7 +13,7 @@
             }else{
                 ?>
     					<div class="sc_top_conment_2_right_singe">
-						<a href="<?php echo $web_url; ?>login.php" style="margin-right:15px;font-size:large;cursor:pointer;">Sign in</a>
+						<a href="<?php echo $web_url; ?>login.php" style="margin-right:15px;font-size:large;cursor:pointer;">Login</a>
 						<a href="<?php echo $web_url; ?>register.php" style="font-size:large;cursor:pointer;">Sign up</a>
                     </div>
                 <?php 

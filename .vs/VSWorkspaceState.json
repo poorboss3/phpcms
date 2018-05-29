@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\oekh_Admin",
+    "\\Templete\\default"
   ],
-  "SelectedNode": "\\about.php",
+  "SelectedNode": "\\register.php",
   "PreviewInSolutionExplorer": false
 }

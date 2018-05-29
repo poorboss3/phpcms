@@ -301,39 +301,43 @@
 
 	<div class="login">
 		<center>
-			<img id="logo" src="/Images/default/18041710270438.jpg" />
+            <img id="logo" src="https://glteck.com/Images/default/18041412581894.png" />
 		</center>
 		<div style="clear:both;height:30px;"></div>
 
 		<form id="login_form" name="login_form" method="post" action="member.php?action=Register" onsubmit="return check()">
 
 			<strong style="font-size:14px;color:red;"></strong>
-			<input type="text" class="form-control" placeholder="Please Enter Account" data-errortxt="Please Enter Account" name="account"
+			<input type="text" class="form-control" placeholder="Account" data-errortxt="Please Enter Account" name="account"
 				id="account" tabindex="1" />
 			<div class="blank10"></div>
-			<input type="password" class="form-control" placeholder="Please Enter Password" data-errortxt="Please EnterPassword" name="password"
+			<input type="password" class="form-control" placeholder="Password" data-errortxt="Please Enter Password" name="password"
 				id="password" tabindex="2" />
 			<div class="blank10"></div>
-			<input type="password" class="form-control" name="password2" id="password2" placeholder="Please EnterPassword Confirmation"
+			<input type="password" class="form-control" name="password2" id="password2" placeholder="Password Confirmation"
 				data-errortxt="Please EnterPassword Confirmation" tabindex="3" />
 			<div class="blank10"></div>
 
-			<input type="text" class="form-control" placeholder="Please Enter Name"
+			<input type="text" class="form-control" placeholder="Name"
 				 data-errortxt="Please Enter Name" name="Name"
 				id="Name" tabindex="1" />
 			<div class="blank10"></div>
-			<input type="text" class="form-control" placeholder="Please Enter E_mail"
+			<input type="text" class="form-control" placeholder="E_mail"
 				 data-errortxt="Please Enter E_mail" name="email"
 				id="email" tabindex="1" />
 			<div class="blank10"></div>
-			<input type="text" class="form-control"  placeholder="Please Enter Phone Number" 
+			<input type="text" class="form-control"  placeholder="Phone Number" 
 				 data-errortxt="Please Enter Phone Number" name="tel"
 				id="tel" tabindex="1" />
 			<div class="blank10"></div>
-			<input type="text" class="form-control" placeholder="Please Enter FacebookID" 
+			<input type="text" class="form-control" placeholder="FacebookID" 
 				    data-errortxt="Please Enter FacebookID" name="facebookID"
 				id="facebookID" tabindex="1" />
 			<div class="blank10"></div>
+            <input type="text" class="form-control" placeholder="Order Number"
+                data-errortxt="Please Enter Order Number" name="OrderNumber"
+                id="OrderNumber" tabindex="1" />
+            <div class="blank10"></div>
 			<input id="reg" type="submit" name="submit" value="Submit" class="register_btn" />
 			<input name="btn_login" type="button" id="btn_reg" value="Sing In" onclick="location.href='/login.php'" />
 
